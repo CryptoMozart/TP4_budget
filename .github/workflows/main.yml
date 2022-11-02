@@ -2,7 +2,9 @@ name: Python package
 on: [push]
 jobs:
   build:
-
+    defaults:
+      run:
+        working-directory: ./
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
